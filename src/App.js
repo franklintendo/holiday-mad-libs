@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Title from './components/Title';
 import MadLibForm from './components/MadLibForm';
 import MadLibChoices from './components/MadLibChoices';
+import MadLibStory from './components/MadLibStory';
 import './App.sass';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -60,10 +61,10 @@ function App() {
       <Container fluid>
         <Row className='justify-content-center py-5'>
           <MadLibForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
-          
-          <Col className="col-auto">
+          <Col md={6}>
           {/* {holidayChoices.showChoices ? <MadLibChoices /> : ""} */}
           <MadLibChoices handleStoryChoice={handleStoryChoice} />
+          <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} />
           </Col>
         </Row>
       </Container>
