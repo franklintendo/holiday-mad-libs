@@ -1,15 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-function Title() {
+function Title({ title }) {
 
-  let version = "default";
 
   return (
-      <Container fluid className="default-title">
+      <Container fluid className={`${title}-title`}>
         <Row>
           <Col className='text-center border-left border-right px-0'>
-            <img className={`title--img ${version}-title--img`} src={require('../img/MadLibTitle.png')} alt="Holiday Mad Libs" />
+            <img className={`title--img ${title}-title--img`} src={require(`../img/titles/${title}.png`)} alt="Holiday Mad Libs" />
           </Col>
         </Row>
       </Container>
