@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+  
+.default
+  &-title 
+    background-color: #B0C4DE;
+    &--img 
+      background-color: #B0C4DE;
+form
+  label
+    &.form-label
+      font-weight: bold;
+      display: inline-block;
+      text-align: right;
+      width: 30%;
+      padding-right: 15px;
+      small
+        font-style: italic;
+        display: block;
+  input
+    &.form-control
+      display: inline-block;
+      width: 70%;
+
+
+@include media-breakpoint-down(md)
+  .title
+    &--img 
+      max-width: 100%;
