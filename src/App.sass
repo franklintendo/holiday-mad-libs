@@ -37,6 +37,8 @@
       background-color: #336699;
 
 form
+  .form-group
+    margin-bottom: 10px;
   label
     &.form-label
       font-weight: bold;
@@ -44,6 +46,8 @@ form
       text-align: right;
       width: 30%;
       padding-right: 15px;
+      font-size: 14px;
+      margin-bottom: 0;
       small
         font-style: italic;
         display: block;
@@ -51,6 +55,8 @@ form
     &.form-control
       display: inline-block;
       width: 70%;
+      height: 100%;
+      vertical-align: top;
 
 .holiday-btn
   background-color: red;
@@ -62,3 +68,16 @@ form
   .title
     &--img 
       max-width: 100%;
+  form
+    label
+      &.form-label
+        font-weight: bold;
+        display: block;
+        text-align: left;
+        width: 100%;
+        small
+          display: inline-block;
+    input
+      &.form-control
+        display: block;
+        width: 100%;

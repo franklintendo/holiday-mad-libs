@@ -39,10 +39,7 @@ function App() {
 
     for (var key in madLibs) {
       if (madLibs[key] === "") {
-        // alert(key);
-        document.getElementsByName(key)[0].focus();
-        
-        // return alert("please enter all fields");
+        return document.getElementsByName(key)[0].focus();
       }
     }
 
@@ -50,9 +47,7 @@ function App() {
   }
 
   function handleStoryChoice(event) {
-    // alert(event.target.name);
     setHolidayChoices({...holidayChoices, userChoice: event.target.name});
-
   }
 
   return (
@@ -60,11 +55,23 @@ function App() {
       <Title title={holidayChoices.userChoice} />
       <Container fluid>
         <Row className='justify-content-center py-5'>
+
+          <Col md={6} lg={5} xl={4}>
+          {
+          // 
+          holidayChoices.showChoices ? 
+          
+          <MadLibChoices handleStoryChoice={handleStoryChoice} /> 
+          
+          : 
+          
           <MadLibForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
-          <Col md={6}>
-          {/* {holidayChoices.showChoices ? <MadLibChoices /> : ""} */}
-          <MadLibChoices handleStoryChoice={handleStoryChoice} />
-          <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} />
+          
+          }
+
+          {holidayChoices.userChoice !== "default" ? <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} /> : ""}
+
+    
           </Col>
         </Row>
       </Container>

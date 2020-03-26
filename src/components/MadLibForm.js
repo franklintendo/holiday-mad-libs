@@ -3,8 +3,8 @@ import { Col, Form, Button } from 'react-bootstrap';
 
 function MadLibForm({ handleInputChange, handleSubmit }) {
   return (
-      <Col md={4}>
-          <h2>STEP 1: Type in the text fields</h2>
+      <div>
+          <h2 className="text-center">STEP 1: Type in the text fields</h2>
           <Form>
             <Form.Group controlId="noun-one">
               <Form.Label>Noun 1 <small>(singular)</small></Form.Label>
@@ -62,7 +62,7 @@ function MadLibForm({ handleInputChange, handleSubmit }) {
               </Button>
             </div>
           </Form>
-      </Col>
+      </div>
   );
 }
 

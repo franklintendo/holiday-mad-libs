@@ -2,8 +2,8 @@ import React from 'react';
 
 function MadLibForm({ handleStoryChoice }) {
   return (
-      <div className="text-center d-inline-block" style={{width: "auto"}}>
-          <h2 className="d-inline-block" style={{width: "auto"}}>STEP 2: Choose your story</h2>
+      <div className="text-center" style={{width: "auto"}}>
+          <h2 className="text-center" style={{width: "auto"}}>STEP 2: Choose your story</h2>
           <div className="d-inline-block">
 
             <img onClick={handleStoryChoice} className='holiday-btn mx-2' src={require('../img/icons/halloweenicon.jpg')} alt="Halloween" name="halloween" width="58" height="58" />
