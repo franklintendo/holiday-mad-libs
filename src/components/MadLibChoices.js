@@ -1,7 +1,10 @@
 import React from 'react';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 function MadLibForm({ handleStoryChoice }) {
   return (
+      
+    
       <div className="text-center" style={{width: "auto"}}>
           <h2 className="text-center" style={{width: "auto"}}>STEP 2: Choose your story</h2>
           <div className="d-inline-block">

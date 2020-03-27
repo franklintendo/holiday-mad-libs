@@ -5,8 +5,13 @@ import MadLibChoices from './components/MadLibChoices';
 import MadLibStory from './components/MadLibStory';
 import './App.sass';
 import { Container, Row, Col } from 'react-bootstrap';
+import { TransitionGroup, CSSTransition, Transition } from "react-transition-group";
 
 function App() {
+
+  const [showForm, setShowForm] = useState(true);
+  const [showChoices, setShowChoices] = useState(false);
+  const [showStory, setShowStory] = useState(false);
 
   const [madLibs, setMadLibs] = useState({
     nounOne: "",
@@ -22,16 +27,12 @@ function App() {
   });
 
   const [holidayChoices, setHolidayChoices] = useState({
-    showChoices: false,
     userChoice: "default"
   });
 
   function handleInputChange(event) {
     const { name, value } = event.target;
-    // console.log("Name: " + name);
-    // console.log("Value: " + value);
     setMadLibs({...madLibs, [name]: value.trim() });
-    console.log(madLibs);
   }
 
   function handleSubmit(event) {
@@ -43,11 +44,15 @@ function App() {
       }
     }
 
-    return setHolidayChoices({...holidayChoices, showChoices: true});
+    setHolidayChoices({...holidayChoices, showChoices: true});
+    setShowForm(false);
+    setShowChoices(true);
+    return;
   }
 
   function handleStoryChoice(event) {
     setHolidayChoices({...holidayChoices, userChoice: event.target.name});
+    return setShowStory(true);
   }
 
   return (
@@ -56,23 +61,26 @@ function App() {
       <Container fluid>
         <Row className='justify-content-center py-5'>
 
-          <Col md={6} lg={5} xl={4}>
-          {
-          // 
-          holidayChoices.showChoices ? 
           
-          <MadLibChoices handleStoryChoice={handleStoryChoice} /> 
           
-          : 
-          
-          <MadLibForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
-          
-          }
+          <CSSTransition in={showForm} timeout={750} classNames="transition-form" appear={true} unmountOnExit={true}>
+            <Col md={6} lg={5} xl={4}>
+              <MadLibForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
+            </Col>
+          </CSSTransition>
 
-          {holidayChoices.userChoice !== "default" ? <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} /> : ""}
+          <CSSTransition in={showChoices} timeout={750} classNames="transition-choices" unmountOnExit={true}>
+            <Col className="col-md-auto">
+              <MadLibChoices handleStoryChoice={handleStoryChoice} />
+            </Col>
+          </CSSTransition> 
 
-    
-          </Col>
+          <CSSTransition in={showStory} timeout={750} classNames="transition-choices" unmountOnExit={true}>
+            <Col lg={5}>
+              <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} />
+            </Col>
+          </CSSTransition>
+
         </Row>
       </Container>
     </div>
