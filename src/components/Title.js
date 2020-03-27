@@ -6,7 +6,7 @@ function Title({ title }) {
   return (
       <Container fluid className={`container--title ${title}-title`}>
         <Row>
-          <Col className='text-center border-left border-right px-0 py-3'>
+          <Col className='text-center border-left border-right px-0 pb-3 py-lg-3'>
             <img className={`title--img ${title}-title--img`} src={require(`../img/titles/${title}.png`)} alt="Holiday Mad Libs" />
           </Col>
         </Row>

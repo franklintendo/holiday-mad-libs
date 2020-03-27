@@ -11,14 +11,14 @@ h1, h2, h3, h4, h5, h6
 
 .btn-primary
   border: none;
-  background-color: #6C698D;
+  background-color: #6C698D!important;
   width: 150px;
   transition: width 0.5s;
   &:hover
-    background-color: #636081;
+    background-color: #636081!important;
     width: 175px;
   &:active
-    background-color: #636081;
+    background-color: #9B99AE!important;
 
 h2 
   &.step-title
@@ -163,6 +163,11 @@ form
       opacity: 0.01;
       transform: translate(0, -10px);
       transition: all 500ms ease-in;
+
+@include media-breakpoint-only(xs)
+  .holiday-banners
+    width: 100%;
+    margin: 0 0 20px 0!important;
 
 @include media-breakpoint-down(md)
   .title

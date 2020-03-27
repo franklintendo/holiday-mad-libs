@@ -7,7 +7,7 @@ import NewYearsEve from "./stories/NewYearsEve";
 import { Col } from "react-bootstrap";
 import { CSSTransition } from "react-transition-group";
 
-function MadLibStory({ userChoice, madLibs }) {
+function MadLibStory({ userChoice, madLibs, handleReturnToForm }) {
 
     function renderStory(userChoice) {
         switch(userChoice) {
@@ -38,11 +38,13 @@ function MadLibStory({ userChoice, madLibs }) {
     }
 
     return(
-        <Col md={7} className="madlib-story-container rounded px-4 py-4">
+        <Col lg={6} xl={7} className="madlib-story-container rounded px-4 py-4 mt-4 mt-lg-0 mx-3 mx-lg-0">
             {renderStory(userChoice)}
             <div className="text-center">
-                <img src={require(`../img/story/${userChoice}1.jpg`)} alt={userChoice} className="mx-3 my-3" />
-                <img src={require(`../img/story/${userChoice}2.jpg`)} alt={userChoice} className="mx-3 my-3" />
+                <img src={require(`../img/story/${userChoice}1.jpg`)} alt={userChoice} className="mx-3 my-3 holiday-banners" />
+                <img src={require(`../img/story/${userChoice}2.jpg`)} alt={userChoice} className="mx-3 my-3 holiday-banners" />
+
+                <button onClick={handleReturnToForm} className='btn btn-primary btn-sm btn-block d-block d-md-none' style={{width: "100%"}}>Return to form</button>
             </div>
         </Col>
     )

@@ -89,7 +89,7 @@ function App() {
         <Row className='content-row justify-content-center pb-5 pt-3'>
 
           <CSSTransition in={showForm} timeout={750} classNames="transition-form" appear={true} unmountOnExit={true}>
-            <Col md={6} lg={5} xl={4} className="rounded py-3 px-3 madlib-form-container">
+            <Col md={7} lg={6} xl={5} className="rounded py-3 px-3 madlib-form-container mx-3">
               <MadLibForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
             </Col>
           </CSSTransition>
@@ -101,7 +101,7 @@ function App() {
           </CSSTransition> 
 
           <CSSTransition in={showStory} timeout={750} classNames="transition-choices" unmountOnExit={true}>
-              <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} />
+              <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} handleReturnToForm={handleReturnToForm} />
           </CSSTransition>
 
         </Row>
