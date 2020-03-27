@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/holiday-mad-libs/static/css/main.d615626e.chunk.css",
-    "main.js": "/holiday-mad-libs/static/js/main.5a4d7bb8.chunk.js",
-    "main.js.map": "/holiday-mad-libs/static/js/main.5a4d7bb8.chunk.js.map",
+    "main.css": "/holiday-mad-libs/static/css/main.3af3fcba.chunk.css",
+    "main.js": "/holiday-mad-libs/static/js/main.ce805e3c.chunk.js",
+    "main.js.map": "/holiday-mad-libs/static/js/main.ce805e3c.chunk.js.map",
     "runtime-main.js": "/holiday-mad-libs/static/js/runtime-main.46e1b3e2.js",
     "runtime-main.js.map": "/holiday-mad-libs/static/js/runtime-main.46e1b3e2.js.map",
-    "static/js/2.db103abd.chunk.js": "/holiday-mad-libs/static/js/2.db103abd.chunk.js",
-    "static/js/2.db103abd.chunk.js.map": "/holiday-mad-libs/static/js/2.db103abd.chunk.js.map",
+    "static/js/2.f073910e.chunk.js": "/holiday-mad-libs/static/js/2.f073910e.chunk.js",
+    "static/js/2.f073910e.chunk.js.map": "/holiday-mad-libs/static/js/2.f073910e.chunk.js.map",
     "index.html": "/holiday-mad-libs/index.html",
-    "precache-manifest.f0280fcbb7065e4a25651ad5d3b24b7c.js": "/holiday-mad-libs/precache-manifest.f0280fcbb7065e4a25651ad5d3b24b7c.js",
+    "precache-manifest.cb48bcd5e7700e22d846bce51c39cc20.js": "/holiday-mad-libs/precache-manifest.cb48bcd5e7700e22d846bce51c39cc20.js",
     "service-worker.js": "/holiday-mad-libs/service-worker.js",
-    "static/css/main.d615626e.chunk.css.map": "/holiday-mad-libs/static/css/main.d615626e.chunk.css.map",
-    "static/js/2.db103abd.chunk.js.LICENSE.txt": "/holiday-mad-libs/static/js/2.db103abd.chunk.js.LICENSE.txt",
+    "static/css/main.3af3fcba.chunk.css.map": "/holiday-mad-libs/static/css/main.3af3fcba.chunk.css.map",
+    "static/js/2.f073910e.chunk.js.LICENSE.txt": "/holiday-mad-libs/static/js/2.f073910e.chunk.js.LICENSE.txt",
     "static/media/default.png": "/holiday-mad-libs/static/media/default.afa2dcc2.png",
     "static/media/fourthjuly.png": "/holiday-mad-libs/static/media/fourthjuly.6f9200ff.png",
     "static/media/fourthjuly1.jpg": "/holiday-mad-libs/static/media/fourthjuly1.490340d0.jpg",
@@ -30,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.46e1b3e2.js",
-    "static/js/2.db103abd.chunk.js",
-    "static/css/main.d615626e.chunk.css",
-    "static/js/main.5a4d7bb8.chunk.js"
+    "static/js/2.f073910e.chunk.js",
+    "static/css/main.3af3fcba.chunk.css",
+    "static/js/main.ce805e3c.chunk.js"
   ]
 }
