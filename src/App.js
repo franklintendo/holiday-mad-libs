@@ -5,7 +5,7 @@ import MadLibChoices from './components/MadLibChoices';
 import MadLibStory from './components/MadLibStory';
 import './App.sass';
 import { Container, Row, Col } from 'react-bootstrap';
-import { TransitionGroup, CSSTransition, Transition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 function App() {
 
@@ -35,6 +35,26 @@ function App() {
     setMadLibs({...madLibs, [name]: value.trim() });
   }
 
+  async function handleReturnToForm(event) {
+    event.preventDefault();
+
+    setShowForm(true);
+    setShowChoices(false);
+    setShowStory(false);
+    return fillValuesWithState();
+  }
+
+  function fillValuesWithState() {
+    setTimeout(() => {
+      for (var key in madLibs) {
+        let input = document.getElementsByName(key)[0];
+        input.value = madLibs[key];
+      }
+      document.getElementsByName('nounOne')[0].focus();
+    }, 1000);
+
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -44,7 +64,6 @@ function App() {
       }
     }
 
-    setHolidayChoices({...holidayChoices, showChoices: true});
     setShowForm(false);
     setShowChoices(true);
     return;
@@ -77,7 +96,7 @@ function App() {
 
           <CSSTransition in={showChoices} timeout={750} classNames="transition-choices" unmountOnExit={true}>
             <Col className="col-md-auto">
-              <MadLibChoices handleStoryChoice={handleStoryChoice} />
+              <MadLibChoices handleStoryChoice={handleStoryChoice} handleReturnToForm={handleReturnToForm} />
             </Col>
           </CSSTransition> 
 

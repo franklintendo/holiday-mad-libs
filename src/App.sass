@@ -9,6 +9,17 @@ html, body, p
 h1, h2, h3, h4, h5, h6
   font-family: 'Baloo Thambi 2', cursive;
 
+.btn-primary
+  border: none;
+  background-color: #6C698D;
+  width: 150px;
+  transition: width 0.5s;
+  &:hover
+    background-color: #636081;
+    width: 175px;
+  &:active
+    background-color: #636081;
+
 h2 
   &.step-title
     margin-bottom: 30px;
@@ -22,13 +33,25 @@ h2
     border: 1px solid #B0C4DE;
   &-story-container
     font-size: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #e1e1e1;
+
+@keyframes fade-in 
+  from 
+    opacity: 0.1;
+  to 
+    opacity: 1;
+
 
 .default
   &-title 
     background-color: #EDF1F7;
+    
     &--img 
       background-color: #B0C4DE;
       border: 1px solid #A0B3CA;
+      animation-name: fade-in;
+      animation-duration: 2s;
 
 .halloween
   &-title 
@@ -36,6 +59,8 @@ h2
     &--img 
       background-color: #ff9900;
       border: 1px solid #E88C00;
+      animation-name: fade-in;
+      animation-duration: 2s;
 
 .fourthjuly
   &-title 
@@ -43,6 +68,8 @@ h2
     &--img 
       background-color: #9ED0E6;
       border: 1px solid #90BED2;
+      animation-name: fade-in;
+      animation-duration: 1s;
 
 .xmas
   &-title 
@@ -50,6 +77,8 @@ h2
     &--img 
       background-color: #DB504A;
       border: 1px solid #C84944;
+      animation-name: fade-in;
+      animation-duration: 1s;
 
 .thanksgiving
   &-title 
@@ -57,6 +86,8 @@ h2
     &--img 
       background-color: #ffcc00;
       border: 1px solid #D1A700;
+      animation-name: fade-in;
+      animation-duration: 2s;
 
 .nye
   &-title 
@@ -64,6 +95,8 @@ h2
     &--img 
       background-color: #336699;
       border: 1px solid #2A547E;
+      animation-name: fade-in;
+      animation-duration: 2s;
 
 form
   .form-group
@@ -90,9 +123,14 @@ form
 
 .holiday-btn
   background-color: red;
+  transition: width 0.3s, height 0.3s;
+  width: 58px;
+  height: 58px;
   &:hover 
     opacity: 0.8;
     cursor: pointer;
+    width: 65px;
+    height: 65px;
 
 .transition-form
   &-enter

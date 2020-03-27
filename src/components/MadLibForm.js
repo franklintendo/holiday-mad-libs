@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Form, Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 function MadLibForm({ handleInputChange, handleSubmit }) {
   return (
