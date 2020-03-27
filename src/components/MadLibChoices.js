@@ -3,10 +3,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 function MadLibForm({ handleStoryChoice }) {
   return (
-      
-    
-      <div className="text-center" style={{width: "auto"}}>
-          <h2 className="text-center" style={{width: "auto"}}>STEP 2: Choose your story</h2>
+      <div className="text-center rounded py-3 px-3 madlib-form-container" style={{width: "auto"}}>
+          <h2 className="text-center step-title" style={{width: "auto"}}>STEP 2: Choose your story</h2>
           <div className="d-inline-block">
 
             <img onClick={handleStoryChoice} className='holiday-btn mx-2 my-3' src={require('../img/icons/halloweenicon.jpg')} alt="Halloween" name="halloween" width="58" height="58" />

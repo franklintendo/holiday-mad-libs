@@ -1,40 +1,69 @@
 @import "~bootstrap/scss/bootstrap";
-  
+
+body
+  background-color: transparent;
+
+html, body, p 
+  font-family: 'Poppins', sans-serif;
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Baloo Thambi 2', cursive;
+
+h2 
+  &.step-title
+    margin-bottom: 30px;
+
+.container--title
+    overflow: hidden;
+
+.madlib
+  &-form-container
+    background-color: #D9E8F1;
+    border: 1px solid #B0C4DE;
+  &-story-container
+    font-size: 18px;
+
 .default
   &-title 
-    background-color: #B0C4DE;
+    background-color: #EDF1F7;
     &--img 
       background-color: #B0C4DE;
+      border: 1px solid #A0B3CA;
 
 .halloween
   &-title 
-    background-color: #ff9900;
+    background-color: #FFE3B9;
     &--img 
       background-color: #ff9900;
+      border: 1px solid #E88C00;
 
 .fourthjuly
   &-title 
-    background-color: #9ED0E6;
+    background-color: #EDF6FA;
     &--img 
       background-color: #9ED0E6;
+      border: 1px solid #90BED2;
 
 .xmas
   &-title 
-    background-color: #DB504A;
+    background-color: #F5CFCD;
     &--img 
       background-color: #DB504A;
+      border: 1px solid #C84944;
 
 .thanksgiving
   &-title 
-    background-color: #ffcc00;
+    background-color: #FFF5D0;
     &--img 
       background-color: #ffcc00;
+      border: 1px solid #D1A700;
 
 .nye
   &-title 
-    background-color: #336699;
+    background-color: #D9E3EC;
     &--img 
       background-color: #336699;
+      border: 1px solid #2A547E;
 
 form
   .form-group

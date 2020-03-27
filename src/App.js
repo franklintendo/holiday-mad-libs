@@ -52,19 +52,25 @@ function App() {
 
   function handleStoryChoice(event) {
     setHolidayChoices({...holidayChoices, userChoice: event.target.name});
+    setBackgroundColor();
     return setShowStory(true);
   }
+
+  function setBackgroundColor() {
+    let root = document.getElementsByTagName( 'html' )[0];
+    root.setAttribute('class', `${holidayChoices.userChoice}-title`);
+  }
+
+  setBackgroundColor();
 
   return (
     <div>
       <Title title={holidayChoices.userChoice} />
       <Container fluid>
-        <Row className='justify-content-center py-5'>
+        <Row className='content-row justify-content-center pb-5 pt-3'>
 
-          
-          
           <CSSTransition in={showForm} timeout={750} classNames="transition-form" appear={true} unmountOnExit={true}>
-            <Col md={6} lg={5} xl={4}>
+            <Col md={6} lg={5} xl={4} className="rounded py-3 px-3 madlib-form-container">
               <MadLibForm handleInputChange={handleInputChange} handleSubmit={handleSubmit} />
             </Col>
           </CSSTransition>

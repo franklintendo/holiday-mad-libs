@@ -26,7 +26,7 @@ function MadLibStory({ userChoice, madLibs }) {
     }
 
     return(
-        <Col md={7}>
+        <Col md={7} className="madlib-story-container">
             {renderStory(userChoice)}
             <div className="text-center">
                 <img src={require(`../img/story/${userChoice}1.jpg`)} alt={userChoice} className="mx-3 my-3" />
