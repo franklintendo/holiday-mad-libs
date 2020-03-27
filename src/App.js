@@ -76,9 +76,7 @@ function App() {
           </CSSTransition> 
 
           <CSSTransition in={showStory} timeout={750} classNames="transition-choices" unmountOnExit={true}>
-            <Col lg={5}>
               <MadLibStory userChoice={holidayChoices.userChoice} madLibs={madLibs} />
-            </Col>
           </CSSTransition>
 
         </Row>

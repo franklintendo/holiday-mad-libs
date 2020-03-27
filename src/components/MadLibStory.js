@@ -4,6 +4,7 @@ import FourthJuly from "./stories/FourthJuly";
 import Christmas from "./stories/Christmas";
 import Thanksgiving from "./stories/Thanksgiving";
 import NewYearsEve from "./stories/NewYearsEve";
+import { Col } from "react-bootstrap";
 
 function MadLibStory({ userChoice, madLibs }) {
 
@@ -25,9 +26,13 @@ function MadLibStory({ userChoice, madLibs }) {
     }
 
     return(
-        <div>
+        <Col md={7}>
             {renderStory(userChoice)}
-        </div>
+            <div className="text-center">
+                <img src={require(`../img/story/${userChoice}1.jpg`)} alt={userChoice} className="mx-3 my-3" />
+                <img src={require(`../img/story/${userChoice}2.jpg`)} alt={userChoice} className="mx-3 my-3" />
+            </div>
+        </Col>
     )
 }
 
