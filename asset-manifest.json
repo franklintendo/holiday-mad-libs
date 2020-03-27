@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/holiday-mad-libs/static/css/main.da7a75fd.chunk.css",
+    "main.js": "/holiday-mad-libs/static/js/main.66c3d20e.chunk.js",
+    "main.js.map": "/holiday-mad-libs/static/js/main.66c3d20e.chunk.js.map",
+    "runtime-main.js": "/holiday-mad-libs/static/js/runtime-main.46e1b3e2.js",
+    "runtime-main.js.map": "/holiday-mad-libs/static/js/runtime-main.46e1b3e2.js.map",
+    "static/js/2.db103abd.chunk.js": "/holiday-mad-libs/static/js/2.db103abd.chunk.js",
+    "static/js/2.db103abd.chunk.js.map": "/holiday-mad-libs/static/js/2.db103abd.chunk.js.map",
+    "index.html": "/holiday-mad-libs/index.html",
+    "precache-manifest.f4292bea1ed73e3fc6e1600871b2fd16.js": "/holiday-mad-libs/precache-manifest.f4292bea1ed73e3fc6e1600871b2fd16.js",
+    "service-worker.js": "/holiday-mad-libs/service-worker.js",
+    "static/css/main.da7a75fd.chunk.css.map": "/holiday-mad-libs/static/css/main.da7a75fd.chunk.css.map",
+    "static/js/2.db103abd.chunk.js.LICENSE.txt": "/holiday-mad-libs/static/js/2.db103abd.chunk.js.LICENSE.txt",
+    "static/media/default.png": "/holiday-mad-libs/static/media/default.afa2dcc2.png",
+    "static/media/fourthjuly.png": "/holiday-mad-libs/static/media/fourthjuly.6f9200ff.png",
+    "static/media/fourthjuly1.jpg": "/holiday-mad-libs/static/media/fourthjuly1.490340d0.jpg",
+    "static/media/fourthjuly2.jpg": "/holiday-mad-libs/static/media/fourthjuly2.270343c5.jpg",
+    "static/media/halloween.png": "/holiday-mad-libs/static/media/halloween.008a19bc.png",
+    "static/media/halloween1.jpg": "/holiday-mad-libs/static/media/halloween1.02ea043f.jpg",
+    "static/media/halloween2.jpg": "/holiday-mad-libs/static/media/halloween2.1fd5f99c.jpg",
+    "static/media/nye.png": "/holiday-mad-libs/static/media/nye.14b47478.png",
+    "static/media/nye1.jpg": "/holiday-mad-libs/static/media/nye1.3d0b9636.jpg",
+    "static/media/nye2.jpg": "/holiday-mad-libs/static/media/nye2.f637c5fc.jpg",
+    "static/media/thanksgiving.png": "/holiday-mad-libs/static/media/thanksgiving.64fa0bab.png",
+    "static/media/thanksgiving2.jpg": "/holiday-mad-libs/static/media/thanksgiving2.3dff288e.jpg",
+    "static/media/xmas.png": "/holiday-mad-libs/static/media/xmas.031a5776.png",
+    "static/media/xmas1.jpg": "/holiday-mad-libs/static/media/xmas1.2685f7cd.jpg",
+    "static/media/xmas2.jpg": "/holiday-mad-libs/static/media/xmas2.0ec903b8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46e1b3e2.js",
+    "static/js/2.db103abd.chunk.js",
+    "static/css/main.da7a75fd.chunk.css",
+    "static/js/main.66c3d20e.chunk.js"
+  ]
+}
