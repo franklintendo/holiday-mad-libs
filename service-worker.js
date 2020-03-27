@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/holiday-mad-libs/precache-manifest.f4292bea1ed73e3fc6e1600871b2fd16.js"
+  "/holiday-mad-libs/precache-manifest.f0280fcbb7065e4a25651ad5d3b24b7c.js"
 );
 
 self.addEventListener('message', (event) => {

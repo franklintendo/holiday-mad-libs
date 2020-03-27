@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9cff9644ff34e0ece01633d717cc7a4",
+    "revision": "91cc5b25e8e6cb700be7e419ca180762",
     "url": "/holiday-mad-libs/index.html"
   },
   {
-    "revision": "3b2a8114d81faf80ae24",
-    "url": "/holiday-mad-libs/static/css/main.da7a75fd.chunk.css"
+    "revision": "7e3d564fc0652eacef8f",
+    "url": "/holiday-mad-libs/static/css/main.d615626e.chunk.css"
   },
   {
     "revision": "da0f302be6101414e655",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/holiday-mad-libs/static/js/2.db103abd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b2a8114d81faf80ae24",
-    "url": "/holiday-mad-libs/static/js/main.66c3d20e.chunk.js"
+    "revision": "7e3d564fc0652eacef8f",
+    "url": "/holiday-mad-libs/static/js/main.5a4d7bb8.chunk.js"
   },
   {
     "revision": "124c18170caf20d273ae",
