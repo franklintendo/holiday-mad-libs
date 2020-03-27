@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55b6b89e317c461904f7d3c99afb7b42",
+    "revision": "7b7255c19728960421c04351ec2d6919",
     "url": "/holiday-mad-libs/index.html"
   },
   {
