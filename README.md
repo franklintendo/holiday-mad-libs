@@ -1,6 +1,6 @@
 # Holiday Mad Libs
 
-This project is a React-based app where users can enter in words and then choose a holiday-based story with their words implemented. <a href="https://franklintendo.github.io/holiday-mad-libs/">Link to project</a>
+This project is a React-based app where users can enter in words and then choose a holiday story with their words implemented. <a href="https://franklintendo.github.io/holiday-mad-libs/">Link to project</a>
 
 ![Image of welcoming screen](./screenshots/welcome.png)
 
