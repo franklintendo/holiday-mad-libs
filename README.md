@@ -1,4 +1,4 @@
-## Holiday Mad Libs
+# Holiday Mad Libs
 
 In the project directory, you can run:
 
